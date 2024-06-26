@@ -23,8 +23,8 @@ class Buyurtma(models.Model):
             message="Noto'g'ri formatdagi telefon raqam kiritildi! \n \
                      Telefon +998XXXXXXXXX shakliga to'gri kelishi kerak."
         )],verbose_name="Telefon raqam")
-    hizmat_turi=models.CharField(choices=HIZMAT_TURLARI , default="Hizmat turini tanlang")
-    hizmat_holati=models.CharField(choices=HIZMAT_HOLATI , default="Yangi")
+    hizmat_turi=models.CharField(max_length=125,choices=HIZMAT_TURLARI , default="Hizmat turini tanlang")
+    hizmat_holati=models.CharField(max_length=125,choices=HIZMAT_HOLATI , default="Yangi")
     buyurtma_sanasi=models.DateTimeField(default=timezone.now, verbose_name="Buyurtma sanasi")
     manzil=models.TextField()
 
