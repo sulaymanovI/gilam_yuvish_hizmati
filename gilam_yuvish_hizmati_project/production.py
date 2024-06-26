@@ -1,4 +1,4 @@
-from settings import *
+from .settings import *
 
 
 ALLOWED_HOSTS = ["gilamchi-bola.uz", "www.gilamchi-bola.uz"]
