@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Gilamchi.Bola</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Gilamchi.Bola" name="keywords">
+        <meta content="Gilamchi.Bola" name="description">
+
+        <!-- Favicon -->
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static "style.css" %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header Start -->
+            <div class="header home">
+                <div class="container-fluid">
+                    <div class="header-top row align-items-center d-flex justify-content-between">
+                        <div>
+                            <div class="brand ">
+                                <a href="{% url 'buyurtma_olish' %} " class="d-flex logo-link align-items-center">
+                                    <img src="{% static 'logo.png' %}" alt="Logo" class="logo">
+                                    Gilamchi.Bola
+                                </a>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="topbar">
+                                <div class="topbar-col">
+                                    <a href="tel:+998913442005"><i class="fa fa-phone-alt"></i>+998913442005</a>
+                                </div>
+                                <div class="topbar-col">
+                                    <a href="mailto:gilamchibola@gmail.com"><i class="fa fa-envelope"></i>gilamchibola@gmail.com</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero row align-items-center">
+                        <div class="col-md-7">
+                            <h2>Sifatli & Ishonchli</h2>
+                            <h2><span>Tozalash</span> Xizmati</h2>
+                            <p>Namangan bo'ylab gilamni olib, yetkazib berish bepul</p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form">
+                                <h3>Buyurtma Berish</h3><br>
+                                <form method="post" class="form_list" action="">
+                                    {{form}}
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-block">Buyurtma Berish</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <p><i class="fa fa-map-marker-alt"></i>Uzbekistan/Namangan</p>
+                                <p><i class="fa fa-phone-alt"></i>+998913442005</p>
+                                <p><i class="fa fa-envelope"></i>gilamchibola@gmail.com</p>
+                            </div>
+                        </div>
+        </div>
+    </body>
+</html>
