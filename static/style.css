@@ -118,6 +118,7 @@ a:focus {
     position: relative;
 }
 
+
 .header .brand a {
     color: #ffffff;
     font-size: 60px;
@@ -1911,6 +1912,18 @@ a:focus {
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
         text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .header .brand a{
+        flex-direction: column;
+    }
+    .header .header-top{
+        flex-direction: column;
+    }
+    .header .hero h2{
+        font-size: 40px;
     }
 }
 
