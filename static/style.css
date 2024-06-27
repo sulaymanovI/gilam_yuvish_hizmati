@@ -1,6 +1,9 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+*{
+    outline:none !important
+}
 
 body {
     color: #666666;
@@ -32,8 +35,8 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #333333;
-    outline: none;
+    color: white;
+    outline-color: white;
     text-decoration: none;
 }
 
@@ -332,6 +335,12 @@ a:focus {
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, .3);
     background: rgba(255, 255, 255, .2);
+    color: white;
+    outline-color: white;
+}
+.form_list div input {
+    color: white;
+    outline:none;
 }
 
 .header .hero .form textarea {
@@ -358,6 +367,7 @@ a:focus {
     border-radius: 5px;
     background: #FFD662;
     transition: .3s;
+    color: white;
 }
 
 .header .hero .form .btn:hover {
@@ -1822,6 +1832,7 @@ a:focus {
     font-size: 14px;
     border: none;
     border-radius: 5px;
+    color: white;
 }
 
 .footer .footer-form .btn {

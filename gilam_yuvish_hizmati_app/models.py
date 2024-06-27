@@ -26,7 +26,7 @@ class Buyurtma(models.Model):
     hizmat_turi=models.CharField(max_length=125,choices=HIZMAT_TURLARI , default="Hizmat turini tanlang")
     hizmat_holati=models.CharField(max_length=125,choices=HIZMAT_HOLATI , default="Yangi")
     buyurtma_sanasi=models.DateTimeField(default=timezone.now, verbose_name="Buyurtma sanasi")
-    manzil=models.TextField()
+    manzil=models.TextField(blank=True , null=True)
 
     class Meta:
         verbose_name_plural="Buyurtmalar"
