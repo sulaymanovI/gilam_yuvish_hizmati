@@ -1973,7 +1973,6 @@ a:focus {
     .footer .footer-contact p{
         font-size: 14px;
     }
-    
 }
 
 @media (max-width:480px){
@@ -1984,5 +1983,4 @@ a:focus {
     .header .topbar-col a {
         font-size: 18px;
     }
-
 }
