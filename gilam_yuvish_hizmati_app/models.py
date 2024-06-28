@@ -1,8 +1,8 @@
 from django.db import models
 from django.utils import timezone
 from django.core.validators import RegexValidator
-
-
+error_message_phone_validation="Noto'g'ri formatdagi telefon raqam kiritildi !"
+PHONE_REGEX=r"^\+?(?:\d{12}|\d{9})$"
 HIZMAT_TURLARI={
     "GY" : "Gilam yuvish",
     "YMY" : "Yumshoq mebel yuvish",
@@ -16,13 +16,13 @@ HIZMAT_HOLATI={
 }
 
 
+
 class Buyurtma(models.Model):
     fullname=models.CharField(max_length=250,verbose_name="Ism Familiya")
-    telefon_raqam=models.CharField(max_length=13,validators=[RegexValidator(
-            regex=r'^\+998\d{9}$',
-            message="Noto'g'ri formatdagi telefon raqam kiritildi! \n \
-                     Telefon +998XXXXXXXXX shakliga to'gri kelishi kerak."
-        )],verbose_name="Telefon raqam")
+    telefon_raqam=models.CharField(max_length=13,validators=RegexValidator(
+        regex=PHONE_REGEX,
+        message=error_message_phone_validation
+    ),verbose_name="Telefon raqam")
     hizmat_turi=models.CharField(max_length=125,choices=HIZMAT_TURLARI , default="Hizmat turini tanlang")
     hizmat_holati=models.CharField(max_length=125,choices=HIZMAT_HOLATI , default="Yangi")
     buyurtma_sanasi=models.DateTimeField(default=timezone.now, verbose_name="Buyurtma sanasi")
