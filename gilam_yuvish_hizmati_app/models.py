@@ -18,6 +18,7 @@ HIZMAT_HOLATI={
 }
 
 class Buyurtma(models.Model):
+    
     fullname=models.CharField(max_length=250,verbose_name="Ism Familiya")
     telefon_raqam=models.CharField(max_length=13,validators=[RegexValidator(
         regex=PHONE_REGEX,

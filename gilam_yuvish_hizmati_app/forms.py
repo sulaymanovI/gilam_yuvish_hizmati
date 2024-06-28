@@ -2,6 +2,7 @@ from django import forms
 from .models import Buyurtma
 
 class BuyurtmaForm(forms.ModelForm):
+    
     telefon_raqam=forms.CharField(max_length=13 , min_length=9)
     class Meta:
         model=Buyurtma
