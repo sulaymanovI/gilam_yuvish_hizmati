@@ -14,7 +14,7 @@ def buyurtma_olish(request):
                 user_data = form.cleaned_data
                 message_text = f"<b>Assalomu aleykum</b> \nYangi buyurtma !\n👤 Buyurtmachi : {user_data['fullname']}\n📞 Telefon : {user_data['telefon_raqam']}\n⚠️ Xizmat turi :{user_data['hizmat_turi']}"
                 if user_data.get("manzil", None):
-                    message_text += f"📍 Manzil: {user_data['manzil']}"
+                    message_text += f"\n📍 Manzil: {user_data['manzil']}"
                 payload = {
                     'chat_id': CHAT_ID,
                     'text': message_text,
