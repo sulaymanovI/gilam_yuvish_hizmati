@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-bkwdive5p#tlf4=64=ne((e4_4b0=yv)3td28#n#i!(wa2_blf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["gilamchi-bola.uz", "www.gilamchi-bola.uz" , '127.0.0.1']
+ALLOWED_HOSTS = ["gilamchi-bola.uz", "www.gilamchi-bola.uz"]
 CSRF_TRUSTED_ORIGINS = ["https://gilamchi-bola.uz", "https://www.gilamchi-bola.uz"]
 
 
