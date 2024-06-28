@@ -52,7 +52,7 @@ a:focus {
     background: #00539C;
 }
 .logo {
-    font-size: 30px;
+    font-size: 20px;
 }
 .back-to-top {
     position: fixed;
@@ -1916,6 +1916,12 @@ a:focus {
 }
 
 @media (max-width:768px){
+    .header .brand .logo{
+        width: 100%;
+        height: 100%;
+        font-size: 45px;
+        min-height: 180px;
+    }
     .header .brand a h2{
         flex-direction: column;
         display: none !important;
@@ -1932,8 +1938,8 @@ a:focus {
     .header .brand .logo{
         width: 100%;
         height: 100%;
-        font-size: 60px;
-        min-height: 243px;
+        font-size: 45px;
+        min-height: 180px;
     }
     .header .brand a h2{
         display: none !important;
@@ -1955,8 +1961,8 @@ a:focus {
     .header .brand .logo{
         width: 100%;
         height: 100%;
-        font-size: 60px;
-        min-height: 243px;
+        font-size: 45px;
+        min-height: 180px;
     }
     .header .brand a h2{
         display: none !important;
@@ -1976,6 +1982,12 @@ a:focus {
 }
 
 @media (max-width:480px){
+    .header .brand .logo{
+        width: 100%;
+        height: 100%;
+        font-size: 45px;
+        min-height: 180px;
+    }
     .header .hero h2{
         font-size: 35px;
         margin-bottom: 4px; 

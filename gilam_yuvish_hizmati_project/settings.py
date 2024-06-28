@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-bkwdive5p#tlf4=64=ne((e4_4b0=yv)3td28#n#i!(wa2_blf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["gilamchi-bola.uz", "www.gilamchi-bola.uz"]
+ALLOWED_HOSTS = ["gilamchi-bola.uz", "www.gilamchi-bola.uz" , '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ["https://gilamchi-bola.uz", "https://www.gilamchi-bola.uz"]
 
 
@@ -127,12 +127,12 @@ STATIC_ROOT='/home/gilamchi/public_html/static'
 MEDIA_ROOT='/home/gilamchi/public_html/media'
 
 
-#STATIC_URL = '/static/'
-#STATIC_ROOT = "/home/gilamchi/public_html/static"
-
-#MEDIA_URL = '/media/'
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+# ]
+# MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#MEDIA_ROOT = "/home/gilamchi/public_html/media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
