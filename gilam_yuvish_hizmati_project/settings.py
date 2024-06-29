@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-bkwdive5p#tlf4=64=ne((e4_4b0=yv)3td28#n#i!(wa2_blf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["gilamchi-bola.uz", "www.gilamchi-bola.uz"]
+ALLOWED_HOSTS = ["gilamchi-bola.uz", "www.gilamchi-bola.uz" , '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ["https://gilamchi-bola.uz", "https://www.gilamchi-bola.uz"]
 
 
@@ -117,22 +117,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/static/'
-MEDIA_URL='/media/'
-STATICFILES_DIRS = [
-    os.path.join(ROOT_DIR, 'static'),
-] 
-STATICFILES_DIRS=[str(BASE_DIR) + "/assets",]
-STATIC_ROOT='/home/gilamchi/public_html/static'
-MEDIA_ROOT='/home/gilamchi/public_html/media'
-
-
 # STATIC_URL = '/static/'
+# MEDIA_URL='/media/'
 # STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static'),
-# ]
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#     os.path.join(ROOT_DIR, 'static'),
+# ] 
+# STATICFILES_DIRS=[str(BASE_DIR) + "/assets",]
+# STATIC_ROOT='/home/gilamchi/public_html/static'
+# MEDIA_ROOT='/home/gilamchi/public_html/media'
+
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
