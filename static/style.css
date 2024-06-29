@@ -406,6 +406,7 @@ a:focus {
 
 @media (max-width:768px){
     .header .brand .logo{
+        width: auto;
         height: 100%;
         max-height: 180px;
     }
