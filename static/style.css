@@ -406,10 +406,8 @@ a:focus {
 
 @media (max-width:768px){
     .header .brand .logo{
-        width: 100%;
         height: 100%;
-        font-size: 45px;
-        min-height: 180px;
+        max-height: 180px;
     }
     .header .brand a h2{
         flex-direction: column;
@@ -425,10 +423,8 @@ a:focus {
 
 @media (max-width:912px){
     .header .brand .logo{
-        width: 100%;
         height: 100%;
-        font-size: 45px;
-        min-height: 180px;
+        max-height: 180px;
     }
     .header .brand a h2{
         display: none !important;
@@ -448,10 +444,8 @@ a:focus {
 
 @media (max-width:1024px) {
     .header .brand .logo{
-        width: 100%;
         height: 100%;
-        font-size: 45px;
-        min-height: 180px;
+        max-height: 180px;
     }
     .header .brand a h2{
         display: none !important;
@@ -472,10 +466,8 @@ a:focus {
 
 @media (max-width:480px){
     .header .brand .logo{
-        width:2px;
-        height:4px;
-        font-size: 45px;
-        min-height: 180px;
+        height: 100%;
+        max-height: 180px;
     }
     .header .hero h2{
         font-size: 35px;
