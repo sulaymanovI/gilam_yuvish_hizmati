@@ -4,7 +4,7 @@ import requests
 
 BOT_TOKEN = "7279156416:AAED89ccV2IyC8HTlHg97CnYICPj3En_nM8"
 telegram_send_message_api = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
-CHAT_ID= 6395813286
+CHAT_ID= 'https://t.me/orders_gb_bg'
 
 def buyurtma_olish(request):
     try:
