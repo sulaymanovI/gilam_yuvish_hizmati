@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import BuyurtmaForm
 import requests
+from django.http import HttpResponse
 
 BOT_TOKEN = "7279156416:AAED89ccV2IyC8HTlHg97CnYICPj3En_nM8"
 telegram_send_message_api = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'

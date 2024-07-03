@@ -382,6 +382,12 @@ a:focus {
     }
 }
 
+.one-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .footer {
     position: relative;
@@ -475,4 +481,92 @@ a:focus {
     .header .topbar-col a {
         font-size: 18px;
     }
+}
+
+@media(max-width:480px){
+    .icons{
+        display: flex !important;
+        flex-direction: column ;
+        cursor: pointer;
+}
+.one-step {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.h2{
+    color: white;
+    font-size: 40px;
+
+    text-align: center !important;
+}
+
+    .icons .one-step h3{
+        font-size: 20px !important;
+        margin-bottom: 30px;
+}
+    .icons .one-step h1{
+        font-size: 100px !important;
+    }
+    .footer{
+        padding-top: 30px;
+    }
+    .one-step .second{
+        height: 60px !important;
+    }
+    
+    .one-step .first{
+        height: 60px !important;
+    }
+
+}
+
+
+.h2{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 100;
+    padding-bottom: 40px;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    cursor: pointer;
+}
+.icons .one-step h1{
+    font-size: 150px;
+    color: white;
+    font-weight: 100;
+}
+
+.icons .one-step{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icons .one-step h3{
+    font-size: 24px;
+    color:white;
+    font-weight: 100;
+    display: inline-block;
+    text-align:center; 
+    margin-top: 30px; 
+}
+
+.footer{
+    padding-top: 70px;
+}
+
+.one-step .second{
+    height: 80px;
+}
+
+.one-step .first{
+    height: 80px;
 }

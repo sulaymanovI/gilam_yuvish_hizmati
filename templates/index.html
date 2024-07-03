@@ -14,13 +14,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
         
         <!-- CSS Libraries -->
+        <link rel="stylesheet" href="https://example.com/path/to/your-icon-library.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="{% static "style.css" %}" rel="stylesheet">
+        <link href="{% static 'style.css' %}" rel="stylesheet">
     </head>
     <body>
         <div class="wrapper">
@@ -68,6 +69,32 @@
                         </div>
                     </div>
                 </div>  
+            </div>
+            <div class="icons">
+                <div class="one-step">
+                    <img src="{% static 'buyurtma.png' %}" alt="" class="first">
+                    <h3>Telefon yoki sayt orqali buyurtma berishingiz mumkin    </h3>
+                </div>
+                <div class="one-step">
+                    <img src="{% static 'phone.png' %}" alt="" class="first">
+                    <h3>Tez orada operatorlarimmiz siz bilan bog'lanishadi</h3>
+                </div>
+                <div class="one-step">
+                    <img src="{% static 'olibketish.png' %}" alt="" class="first">
+                    <h3>Hodimlarimmiz buyurtmalarni olib ketishadi</h3>
+                </div>
+                <div class="one-step">
+                    <img src="{% static 'done.png' %}" alt="" class="second">
+                    <h3>Jihozlaringiz tajribali hodimlarimmiz tomonidan yuviladi</h3>
+                </div>
+                <div class="one-step">
+                    <img src="{% static 'olibkelish.png' %}" alt="" class="second">
+                    <h3>Buyurtmalaringizni uyingizga yetkazib beramiz</h3>
+                </div>
+                <div class="one-step">
+                    <img src="{% static 'tozalik.png' %}" alt="" class="second">
+                    <h3>Uyingizga tozalik va ozodalik yana qaytadi</h3>
+                </div>
             </div>
             <div class="footer">
                 <div class="container">
